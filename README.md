@@ -16,13 +16,14 @@ try {
     }
 ```
 
-1. on the other end, the native app can also send messages to the JS code using:
+on the other end, the native app can also send messages to the JS code using:
 ```
 let js = "nativeMessage('hi there!');"
 webView.evaluateJavaScript(js, completionHandler: nil)
 ```
 (`nativeMessage` function is available under /html/portis.html)
-1. The portis.html page is loading the Portis via CDN
+
+The portis.html page is loading the Portis via CDN
 
 ## Note
 1. Currently this sample code is working only on localhost, so the portis SDK's index.js is available under /html/index.js and the portis.html is using it.
