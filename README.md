@@ -21,10 +21,11 @@ on the other end, the native app can also send messages to the JS code using:
 let js = "nativeMessage('hi there!');"
 webView.evaluateJavaScript(js, completionHandler: nil)
 ```
-(`nativeMessage` function is available under /html/portis.html)
+
+`nativeMessage()` function is available under `/html/portis.html`
 
 The portis.html page is loading the Portis via CDN
 
 ## Note
-1. Currently this sample code is working only on localhost, so the portis SDK's index.js is available under /html/index.js and the portis.html is using it.
+1. Currently this sample code is working only on localhost, so the portis SDK's index.js is available under `/html/index.js` and the `portis.html` is using it.
 1. The portis.html file should be available on a remote server, currently in this sample I used `http-server` in order to server it on http://127.0.0.1:8080/portis.html
