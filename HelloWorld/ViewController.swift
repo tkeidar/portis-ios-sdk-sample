@@ -4,6 +4,9 @@ import WebKit
 class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print("got message", message.body)
+        
+        let js = "nativeMessage('hi there!');"
+        webView.evaluateJavaScript(js, completionHandler: nil)
     }
     
     var webView: WKWebView!

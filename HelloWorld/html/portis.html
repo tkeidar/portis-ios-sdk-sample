@@ -30,6 +30,10 @@
         portis = new Portis("efe59076-4b9c-48ea-9a31-e04a69191c3d", "ropsten");
       }
       portis.showPortis();
+
+      function nativeMessage(data) {
+        console.log("GOT MESSAGE FROM NATIVE TO JS", data);
+      }
     </script>
   </body>
 </html>
